@@ -1,0 +1,312 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+    overflow-y: hidden;
+    /* Prevent scrolling on the main body */
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    padding: 0 20px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px; /* Adds space below the input container */
+    
+    
+}
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between left (logo) and right (buttons) */
+    align-items: center; /* Vertically align items */
+    height: 70px; /* Fix the height of the navigation bar */
+    
+}
+header h1 {
+    margin-top: 5px; /* Add this to reduce the space above */
+    margin-bottom: 10px;
+}
+
+header input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto; /* Keep this unchanged */
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Prevent the logo from increasing the header's height */
+}
+
+.header-left img {
+    height: 300px; /* Adjust logo height */
+    width: 300% auto; /* Maintain aspect ratio */
+    display: block;
+    margin-top: 100px; /* Adjust this value to control the distance from the top */
+}
+.header-right {
+    display: flex;
+    gap: 20px; /* Add spacing between Cart, Account, and Home */
+    align-items: center; /* Vertically align items */
+    margin-top: 50px; /* Adjust this value to control the distance from the top */
+    justify-content: space-around; 
+}
+
+.cart-icon {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically aligns the cart icon and count */
+    position: relative; /* Set relative positioning for the container */
+    margin-top: 2px; /* Reduced margin to move the icon upwards */
+    font-size: 25px; /* Increases the size of the cart icon */
+}
+
+.cart-icon img {
+    width: 40px; /* Set a larger width for the cart icon image */
+    height: 40px; /* Set a larger height for the cart icon image */
+    margin-right: 30px; /* Space between the icon and text (optional) */
+}
+
+.cart-count {
+    position: absolute; /* Allows positioning relative to the parent */
+    top: -10px; /* Adjust this value to move the count above the icon */
+    right: -10px; /* Adjust this value to position it to the top-right of the icon */
+    background-color: #e91e63; /* Pink background for the count */
+    color: white; /* White text for contrast */
+    font-size: 12px; /* Adjust the font size */
+    border-radius: 50%; /* Circular shape */
+    padding: 2px 6px; /* Adds space around the number */
+    min-width: 20px; /* Ensures a consistent width for single or double digits */
+    text-align: center; /* Centers the text inside */
+    line-height: 1; /* Ensures the text is vertically centered */
+    left: 10px; /* Move to the left */
+    margin-top: 1px;
+    width: 19px; /* Fixed width for circular shape */
+    height: 14px; /* Fixed height for circular shape */
+}
+
+/* Cart Link Styling */
+.cart {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically aligns the cart label */
+    gap: 5px; /* Adds spacing between the icon and the label */
+    margin-top: 50px; /* Adjust this value to control the distance from the top */
+}
+
+.cart a {
+    color: white; /* Matches the header text color */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 20px; /* Adjusts the text size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    padding: 5px 10px; /* Adds spacing around the text */
+    border-radius: 5px;
+}
+
+.cart a:hover {
+    background-color: #e91e63; /* Adds a pink background on hover */
+    color: white; /* Ensures the text remains white on hover */
+}
+.account {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically aligns the account icon and text */
+    gap: 5px; /* Adds spacing between the icon and the text */
+}
+
+.account a {
+    color: white; /* Matches the header text color */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 20px; /* Adjusts the text size */
+    padding: 5px 10px; /* Adds spacing around the text */
+    border-radius: 5px; /* Adds rounded corners to the hover effect */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-top: 50px; /* Adjust this value to control the distance from the top */
+    margin-right: -2px; 
+}
+.account a:hover {
+    background-color: #e91e63; /* Adds a pink background on hover */
+    color: white; /* Ensures the text remains white on hover */
+}
+
+.back-btn {
+    background-color: transparent; /* Remove the pink background */
+    color: white; /* Match the text color to the header */
+    border: none; /* No border */
+    font-size: 20px; /* Adjust font size */
+    cursor: pointer; /* Show pointer on hover */
+    padding: 5px 10px; /* Add some padding for spacing */
+    border-radius: 5px; /* Rounded edges for hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    text-decoration: none; /* Remove underline */
+    margin-top: 50px; /* Adjust this value to control the distance from the top */
+}
+
+.back-btn:hover {
+    background-color: #e91e63; /* Pink background on hover */
+    color: white; /* White text on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+/* Adjust layout for filter-container and products-grid */
+.content-container {
+    display: flex;
+    gap: 0px; /* Adds a gap between filter and products grid */
+    height: calc(100vh - 100px); /* Matches content-container height */
+    overflow-y: hidden; /* Prevent scrolling of the entire content container */
+    overflow-x: hidden; /* No horizontal scroll */
+
+}
+
+/* Filter Sidebar Styling */
+.filter-container {
+    position: sticky; /* Keeps it fixed at the top of the viewport */
+    top: 100px; /* Keeps it below the header */
+    left: 0; /* Aligns it to the left */
+    width: 250px; /* Fixed width for the filter container */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Padding inside the container */
+    height: calc(100vh - 100px); /* Full height below the header */
+    border-right: 1px solid #ccc; /* Separator line on the right */
+    overflow-y: auto; /* Scroll only for the filter container if content overflows */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 10; /* Ensure it stays above other elements */
+    
+}
+
+.filter-container h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    border-radius: 50%;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.filter-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-section ul li {
+    margin-bottom: 10px;
+}
+
+.filter-section ul li input[type="radio"] {
+    margin-right: 10px;
+}
+
+#apply-filters {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#apply-filters:hover {
+    background-color: #218838;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Inner spacing */
+    margin-top: 5px; /* Space above the grid */
+    flex-grow: 1; /* Allow grid to take up remaining space */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive layout * */
+    background-color: #ffffff; /* White background */
+    overflow-y: auto; /* Enable scrolling only for the grid */
+    margin-bottom: 100px;
+    box-sizing: border-box; /* Include padding in height calculations */
+    
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 380px; /* Set a fixed height for all items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure consistent spacing */
+ 
+}
+
+.product-item .category {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    font-style: italic; /* Makes it slightly distinct */
+}
+
+.product-item img {
+    width: 100%; /* Makes the image take the full width of the container */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image scales and crops to fit while maintaining aspect ratio */
+    border-radius: 10px; /* Keeps the rounded corners */
+    display: block; /* Ensures no extra spacing around the image */
+}
+
+.product-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+/* Button Styling for Add to Cart */
+.cart-btn {
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: #e91e63; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.cart-btn:hover {
+    background-color: #c2185b;; /* Darker blue on hover */
+}
+
+/* Reviews Section */
+.reviews {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+
+.reviews ul {
+    padding-left: 20px;
+}
+
+.reviews li {
+    margin: 5px 0;
+}

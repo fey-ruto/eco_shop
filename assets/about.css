@@ -1,0 +1,153 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%; /* Adjust this for a longer or shorter navbar width */
+    height: 72px; /* Adjust the height to your preference */
+    background-color: #28a745;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo img {
+    height: 280px; /* Adjust logo height */
+    width: 280% auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #e91e63;
+    color: white;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 55px 20px; /* Ensures equal space on top and bottom, and on left and right */
+    margin: 50px auto; /* Centers the box and controls external spacing */
+    background-color: #f1f1f1; /* Optional background */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}
+
+header h1 {
+    font-size: 36px;
+    color: #065a19;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 24px; /* Adjust heading size */
+    color: #218838; /* Green color for headings */
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Team Section */
+.team {
+    margin: 5px auto;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 28px;
+    color: #218838;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center; /* Align items vertically to center */
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px; /* Set a consistent width */
+    height: 150px; /* Set a consistent height */
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #e91e63;
+    text-align: center; /* Center-align text */
+    margin: 5px 0; /* Adjust spacing around text */
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #0a0a0a;
+    text-align: center; /* Center-align text */
+    margin: 5px 0; /* Adjust spacing around text */
+}
+.our-values {
+    text-align: center; /* Centers the text inside the container */
+    margin: 30px auto; /* Adds vertical space and centers the container horizontally */
+    max-width: 800px; /* Optional: Restricts the width of the container */
+    padding: 20px; /* Adds spacing around the content */
+}
+
+.our-values h2 {
+    font-size: 24px; /* Adjust heading size */
+    color: #218838; /* Green color for headings */
+    margin-bottom: 15px; /* Adds space below each heading */
+}
+
+.our-values p, .mission-values ul {
+    font-size: 16px; /* Uniform font size */
+    line-height: 1.6; /* Adds line height for better readability */
+    color: #333; /* Standard text color */
+}
+
+.our-values ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Ensures no internal padding */
+    margin: 0; /* Ensures no external margin */
+}
+
+.our-values ul li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+}

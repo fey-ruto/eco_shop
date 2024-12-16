@@ -1,0 +1,196 @@
+/* General Reset */
+body, h2, p, label, input, button, a, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Form Container */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form Header */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.4); /* Green glow */
+}
+
+/* Hints and Error Messages */
+/* General Hint Styling */
+.hint {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 2px; /* Reduce space between input and hint */
+    margin-bottom: 10px; /* Add space below the hint */
+    display: block;
+    line-height: 1.4; /* Proper line height for readability */
+}
+
+/* Error Messages */
+.error-message {
+    color: #d9534f;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    margin-bottom: 5px; /* Add consistent space between input and next element */
+}
+
+/* Password Hint List */
+.hint ul {
+    padding-left: 20px; /* Indent bullet points slightly */
+    margin-top: 5px;
+    list-style-type: disc; /* Use disc-style bullets */
+}
+
+/* Individual List Items */
+.hint ul li {
+    margin-bottom: 5px; /* Add space between list items */
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.85rem;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Button Styling */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c5093e;;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+.form-footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* General Link Styling */
+a {
+    color: #007bff; /* Set the default link color (blue) */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold; /* Make the text bold for better emphasis */
+}
+
+/* Hover Effect for the Link */
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3; /* Darken the color on hover */
+}
+
+/* Footer Specific Link */
+.form-footer a {
+    color: #ff497d; /* Specific color for the "Login" link */
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+    color: #d7385e; /* Darker pink when hovered */
+}
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.4); /* Green glow */
+}
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
