@@ -90,7 +90,7 @@ if ($result) {
              data-price="<?= $product['price'] ?>">
              
             <!-- Product Image -->
-            <img src="../..<?= htmlspecialchars($product['image']) ?>" alt="<?= htmlspecialchars($product['title']) ?>">
+            <img src="<?= htmlspecialchars($product['image']) ?>" alt="<?= htmlspecialchars($product['title']) ?>">
             
             <!-- Product Title -->
             <h2><?= htmlspecialchars($product['title']) ?></h2>

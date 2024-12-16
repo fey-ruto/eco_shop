@@ -59,11 +59,11 @@ include('../../db/database.php');
             <textarea id="description" name="description" placeholder="Enter product description" rows="4" required></textarea>
 
             <!-- Image Upload -->
-            <label for="image">Image Upload:</label>
-            <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png">
+            <!-- <label for="image">Image Upload:</label>
+            <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png"> -->
 
             <!-- Image URL -->
-            <p style="text-align: center;">OR</p>
+            <!-- <p style="text-align: center;">OR</p> -->
             <label for="image_url">Image URL:</label>
             <input type="url" id="image_url" name="image_url" placeholder="Enter image URL">
 
