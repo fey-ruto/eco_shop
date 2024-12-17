@@ -98,31 +98,63 @@ if ($db->connect_error) {
 ```
 ecomaze_solutions/
 │
-├── db/                       # Database connection
-│   └── database.php
-│
-├── view/                     # Front-end pages
-│   ├── index.php             # Home page
-│   ├── cart.php              # Shopping cart page
-│   ├── account.php           # User account page
-│   └── admin/                # Admin pages
-│       ├── products_manage.php
-│       └── add_product.php
-│
-├── actions/                  # Back-end logic
-│   ├── add_to_cart.php       # Add product to cart
+├── actions/                  # Backend actions
+│   ├── add_product.php       # Add a new product
+│   ├── add_to_cart.php       # Add items to cart
+│   ├── cart_count.php        # Get cart count
 │   ├── checkout.php          # Checkout functionality
-│   └── delete_product.php    # Delete product logic
+│   ├── delete_product.php    # Delete a product
+│   ├── delete_user.php       # Delete a user
+│   ├── edit_product.php      # Edit product details
+│   ├── edit_user.php         # Edit user details
+│   ├── get_ordered_products.php # Fetch ordered products
+│   ├── get_products.php      # Fetch product list
+│   ├── get_user.php          # Fetch user information
+│   ├── login.php             # User login functionality
+│   ├── logout.php            # User logout functionality
+│   ├── signup.php            # User signup functionality
+│   └── update_account.php    # Update user account details
 │
 ├── assets/                   # Static files (CSS, images)
-│   ├── index.css             # Stylesheet
-│   ├── products.css          # Product page styles
-│   └── uploads/              # Product images
+│   ├── uploads/              # Uploaded assets
+│   │   ├── faith.jpg
+│   │   ├── inez.jpg
+│   │   └── selorm.jpg
+│   ├── about.css             # About page styles
+│   ├── account.css           # Account management styles
+│   ├── admin.css             # Admin panel styles
+│   ├── cart.css              # Cart page styles
+│   ├── forms.css             # Forms styling
+│   ├── index.css             # Home page styling
+│   ├── login.css             # Login page styles
+│   └── signup.css            # Signup page styles
 │
-└── README.md                 # Project documentation
-```
+├── db/                       # Database connection and functions
+│   ├── auth_functions.php    # Authentication helper functions
+│   ├── database_functions.php # General database functions
+│   └── validation_functions.php # Input validation functions
+│
+├── utils/                    # Utility helper files
+│   ├── constants.php         # Project constants
+│   ├── errorHandler.php      # Error handling functions
+│   └── sessionHelper.php     # Session management helper
+│
+├── view/                     # Front-end pages
+│   ├── admin/                # Admin-specific pages
+│   │   ├── products.php      # Admin product management
+│   │   └── about.php         # Admin about page
+│   ├── about.php             # About page for users
+│   ├── account.php           # Account page for users
+│   ├── cart.php              # Shopping cart page
+│   ├── checkout.php          # Checkout process page
+│   ├── login.php             # Login page
+│   ├── products.php          # Product display page
+│   └── signup.php            # Signup page
+│
+├──index.php                 # Main entry point of the website
+---README.md                 # Project documentation
 
----
+```
 
 ## **How to Contribute**  
 
