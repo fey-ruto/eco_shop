@@ -1,9 +1,9 @@
 ---
 
-# **Ecomaze Solutions**  
+# **Ecoshop**  
 
 ## **Project Overview**  
-Ecomaze Solutions is a female-focused e-commerce platform designed to provide women and girls with **affordable, eco-friendly menstrual care products**. This platform bridges the gap in accessibility, offering sustainable solutions like biodegradable pads, tampons, and reusable liners.  
+Ecoshop is a female-focused e-commerce platform designed to provide women and girls with **affordable, eco-friendly menstrual care products**. This platform bridges the gap in accessibility, offering sustainable solutions like biodegradable pads, tampons, and reusable liners.  
 
 The website features a **user-friendly shopping experience** for customers and an **admin panel** for managing products, orders, and users efficiently.  
 
@@ -50,7 +50,7 @@ The website features a **user-friendly shopping experience** for customers and a
 
 ## **Project Setup Instructions**  
 
-Follow these steps to run the Ecomaze Solutions website on your local machine:
+Follow these steps to run the Ecoshop website on your local machine:
 
 ### **1. Clone the Repository**  
 Clone the project from GitHub to your local computer using the following command:  
@@ -96,7 +96,7 @@ if ($db->connect_error) {
 ## **File Structure**  
 
 ```
-ecomaze_solutions/
+eco_shop/
 │
 ├── actions/                  # Backend actions
 │   ├── add_product.php       # Add a new product
