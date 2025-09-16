@@ -10,7 +10,7 @@ $isLoggedIn = isset($_SESSION['user']); // Example: Check if user is logged in
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Ecomaze</title>
+    <title>Welcome to Ecoshop</title>
     <link rel="stylesheet" href="assets/index.css"> <!-- Adjusted path for root-level CSS -->
 </head>
 <body>
@@ -34,13 +34,13 @@ $isLoggedIn = isset($_SESSION['user']); // Example: Check if user is logged in
 
     <!-- Welcome Section (Centered Content) -->
     <header>
-        <h1>Welcome to Ecomaze Solutions</h1>
+        <h1>Welcome to Ecoshop </h1>
         <p>Your one-stop shop for affordable and eco-friendly femcare products.</p>
     </header>
 
     <!-- Features Section -->
     <section class="features">
-        <h2>Why Choose Ecomaze?</h2>
+        <h2>Why Choose Ecoshop?</h2>
         <ul>
             <li>Eco-friendly products</li>
             <li>Affordable pricing</li>
